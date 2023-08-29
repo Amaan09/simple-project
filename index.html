@@ -9,12 +9,16 @@
 <body>
     <h1>Registration form</h1>
 
-    <label for="username">Username</label>
-    <input name="username" type="text">
+    <form action="/" method="post">
+        <label for="username">Username</label>
+        <input name="username" type="text" required>
 
-    <label for="password">Password</label>
-    <input name="password" type="password">
+        <label for="password">Password</label>
+        <input name="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-    <button>Submit</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    
 </body>
 </html>
